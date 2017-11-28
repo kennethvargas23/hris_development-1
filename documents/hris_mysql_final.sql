@@ -89,8 +89,8 @@ CREATE TABLE `post` (
 	`post_type` INT(12) NOT NULL,
 	`post_dateCreated` TIMESTAMP NOT NULL,
 	`post_dateUpdated` TIMESTAMP,
-	`post_targetDepartment` INT(12),
-	`post_targetTitle` INT(12),
+	`post_target_department` INT(12),
+	`post_target_title` INT(12),
 	PRIMARY KEY (`post_id`)
 );
 
@@ -324,9 +324,9 @@ ALTER TABLE `post` ADD CONSTRAINT `post_fk0` FOREIGN KEY (`post_author`) REFEREN
 
 ALTER TABLE `post` ADD CONSTRAINT `post_fk1` FOREIGN KEY (`post_type`) REFERENCES `post_type`(`type_id`);
 
-ALTER TABLE `post` ADD CONSTRAINT `post_fk2` FOREIGN KEY (`post_targetDepartment`) REFERENCES `employee_department`(`department_id`);
+ALTER TABLE `post` ADD CONSTRAINT `post_fk2` FOREIGN KEY (`post_target_department`) REFERENCES `employee_department`(`department_id`);
 
-ALTER TABLE `post` ADD CONSTRAINT `post_fk3` FOREIGN KEY (`post_targetTitle`) REFERENCES `employee_title`(`title_id`);
+ALTER TABLE `post` ADD CONSTRAINT `post_fk3` FOREIGN KEY (`post_target_title`) REFERENCES `employee_title`(`title_id`);
 
 ALTER TABLE `employee_load` ADD CONSTRAINT `employee_load_fk0` FOREIGN KEY (`load_subject`) REFERENCES `subject`(`subject_id`);
 
