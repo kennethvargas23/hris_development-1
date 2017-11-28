@@ -131,7 +131,7 @@ switch ($active_filter) {
 									<button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
 									<button type='submit' class='btn btn-primary'>Save</button>
 								</div>
-								<input type="hidden" name="type" value="1">
+								<input type="hidden" name="type" value="announcement">
 							</form>
 						</div>
 
@@ -165,7 +165,7 @@ switch ($active_filter) {
 									<button type='submit' class='btn btn-primary'>Save changes</button>
 
 								</div>
-								<input type="hidden" name="type" value="2">
+								<input type="hidden" name="type" value="event">
 							</form>	
 						</div>
 

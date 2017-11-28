@@ -41,13 +41,15 @@ class post extends CI_Controller {
 
 	}
 	public function post_add(){
+
+		$post_type = $this->post_model->post_type($this->input->post('type'));
 		$data = array(
 			'post_title'=>$this->input->post('post_title'),
 			'post_when_start'=>$this->input->post('post_when_start'),
 			'post_when_end'=>$this->input->post('post_when_end'),
 			'post_body'=>$this->input->post('post_body'),
 			'post_author'=>$this->session->userdata['logged_in']['account_id'],
-			'post_type'=>$this->input->post('type'),
+			'post_type'=>$post_type,
 			'post_when_start'=>$this->input->post('post_when_start'),
 			'post_when_end'=>$this->input->post('post_when_end')
 		);

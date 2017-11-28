@@ -38,6 +38,10 @@ class post_model extends CI_Model {
 		->get('post')->result_array();
 		return $result[0];
 	}
+	function post_type($data){
+		$result = $this->db->where('type_name',$data)->get('post_type')->result_array();
+		return $result[0]['type_id'];
+	}
 	function post_delete($id){
 		$this->db->delete('post',array('post_id'=>$id));
 		return true;
