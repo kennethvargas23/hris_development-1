@@ -74,12 +74,16 @@
 	<table class="table table-hover c-raduis shadow-light mt-5 mb-5 border-0 ">
 			<thead>
 				<tr>
-					<th class="border-0" scope="col"><h5 class="f-bold">Subject Load</h5></th>
-					<th class="border-0"></th>
+					<th class="border-0" scope="col"><h5 class="f-bold">
+					 Subject Load
+					 <button type="button" class="btn btn-post ml-3 f-normal c-raduis">Add Load</button></h5></th>
+					<th class="border-0">
+						
+					</th>
 					<th class="border-0"></th>
 					<th class="border-0"></th>
 					<th class="border-0">
-						<button type="button" class="btn btn-post f-normal c-raduis">Add Load</button>
+						
 					</th>
 				</tr>
 			</thead>
