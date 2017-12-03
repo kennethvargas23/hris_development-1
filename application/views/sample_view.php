@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Employee</title>
-	<!-- bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<!-- animate -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
+<?php include 'include_header.php' ?>
 <div class="fixed-top">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light border border-black pt-2 pb-2 pl-5">
 	  <a class="navbar-brand open-sans pl-3 accent f-bold" href="#">
@@ -51,7 +37,7 @@
 	<div class="card  mt-5 shadow-light">
 			<div class="c-raduis pb-2 m-0">
 					<div class="row p-lg-5">
-							<img class="ml-4 img-fluid employee-size" src="img/employee.png">
+							<img class="ml-4 img-fluid employee-size" src="<?php echo base_url('/assets/img/employee.png'); ?>">
 							<div class=" ml-4">
 								<h5><strong>Smith, Sam</strong></h5>
 								<p class="m-0">Director, Quality Assurance Office</p>

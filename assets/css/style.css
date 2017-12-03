@@ -153,6 +153,8 @@ p, h6 {
 }
 .Home {
 	padding-top: 115px;
+	padding-left: 65px;
+	padding-right: 65px;
 }
 .t-btn {
 	background: #DFDFDF;
